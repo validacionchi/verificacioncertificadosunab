@@ -528,4 +528,53 @@ h1 {
   .help-widget strong {
     font-size: 21px;
   }
+/* =========================================
+   DISEÑO SOLO PARA COMPUTADOR
+   ========================================= */
+
+@media (min-width: 769px) {
+
+  .footer-top {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 50px !important;
+    align-items: start !important;
+  }
+
+  .socials {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    gap: 28px !important;
+  }
+
+  .footer-bottom {
+    display: grid !important;
+    grid-template-columns: 260px 1fr 1fr 1fr !important;
+    gap: 45px !important;
+    align-items: start !important;
+    width: 100% !important;
+  }
+
+  .footer-brand {
+    grid-column: 1 !important;
+  }
+
+  .footer-bottom > div:nth-child(2) {
+    grid-column: 2 !important;
+  }
+
+  .footer-bottom > div:nth-child(3) {
+    grid-column: 3 !important;
+  }
+
+  .footer-bottom > div:nth-child(4) {
+    grid-column: 4 !important;
+  }
+
+  .footer-brand img {
+    width: 220px !important;
+    max-width: 220px !important;
+    height: auto !important;
+  }
 }
