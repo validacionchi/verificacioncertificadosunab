@@ -591,3 +591,62 @@ h1 {
     letter-spacing: -0.2px;
   }
 }
+
+/* =========================================================
+   ÚNICA CORRECCIÓN: CABECERA EN CELULAR
+   No modifica el resto del diseño
+   ========================================================= */
+@media (max-width: 768px) {
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .topbar {
+    width: 100% !important;
+    height: 92px !important;
+    min-height: 92px !important;
+    display: grid !important;
+    grid-template-columns: 66% 34% !important;
+    overflow: hidden !important;
+  }
+
+  .brand-box {
+    width: auto !important;
+    min-width: 0 !important;
+    height: 92px !important;
+    min-height: 92px !important;
+    box-sizing: border-box !important;
+    padding: 8px 10px !important;
+  }
+
+  .brand-box .logo {
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: 74px !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .topbar-title {
+    width: auto !important;
+    min-width: 0 !important;
+    height: 92px !important;
+    min-height: 92px !important;
+    box-sizing: border-box !important;
+    padding: 8px 7px !important;
+    font-size: 16px !important;
+    line-height: 1.18 !important;
+    font-weight: 600 !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: left !important;
+    overflow: hidden !important;
+  }
+}
