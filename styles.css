@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-red: #a7192d;
+  --nav-bg: #f3f3f3;
+  --text: #3f3f3f;
+  --border: #dddddd;
+  --footer: #07395b;
+  --footer-dark: #1d1f1f;
+  --page-bg: #ffffff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--page-bg);
+}
+
+.topbar {
+  height: 102px;
+  display: flex;
+  background: var(--brand-red);
+  color: #fff;
+}
+
+.brand-box {
+  width: 345px;
+  min-width: 345px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 18px 22px;
+}
+
+.logo {
+  max-width: 300px;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.topbar-title {
+  display: flex;
+  align-items: center;
+  padding-left: 54px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subnav {
+  height: 77px;
+  background: var(--nav-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subnav a {
+  color: #3d3d3d;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.page-wrap {
+  padding: 48px 6%;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 32px 30px 88px;
+  min-height: 710px;
+}
+
+.intro {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+}
+
+h1 {
+  margin: 0 0 14px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.main-cert-title,
+.section h2 {
+  color: var(--brand-red);
+  font-weight: 500;
+}
+
+.main-cert-title {
+  font-size: 43px;
+  line-height: 1.25;
+  margin: 0 0 18px;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.section h2 {
+  font-size: 39px;
+  margin: 0 0 16px;
+}
+
+.data-block {
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+.field {
+  margin: 0 0 15px;
+}
+
+.field strong {
+  display: block;
+  font-weight: 700;
+}
+
+.field span {
+  display: block;
+}
+
+.download-section {
+  margin-top: 24px;
+}
+
+.pdf-download {
+  width: 105px;
+  min-height: 115px;
+  border: 2px solid #c9d3de;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #9d1e25;
+  font-weight: 700;
+  padding: 9px;
+}
+
+.pdf-download img {
+  width: 62px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  background: var(--footer);
+  color: #fff;
+  padding: 55px 7% 0;
+  font-size: 20px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.footer h3 {
+  margin: 0 0 25px;
+  font-size: 25px;
+}
+
+.footer p {
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+  font-size: 36px;
+  font-weight: 700;
+  padding-top: 35px;
+}
+
+.footer-line {
+  height: 1px;
+  background: rgba(255,255,255,.7);
+  margin: 28px 0 32px;
+}
+
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.15fr 1fr;
+  gap: 40px;
+  padding-bottom: 58px;
+}
+
+.footer-brand img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.help-widget {
+  position: fixed;
+  right: 28px;
+  bottom: 25px;
+  background: #fff;
+  border-radius: 38px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.22);
+  min-width: 245px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 20px 8px 8px;
+  z-index: 10;
+}
+
+.help-widget .avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #2162a9;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.help-widget strong,
+.help-widget small {
+  display: block;
+}
+
+.help-widget strong {
+  font-size: 20px;
+  color: #222;
+}
+
+.help-widget small {
+  color: #888;
+  margin-top: 3px;
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .brand-box {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+  }
+
+  .topbar-title {
+    padding: 20px;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  .page-wrap {
+    padding: 25px 14px;
+  }
+
+  .card {
+    padding: 26px 20px 55px;
+  }
+
+  .main-cert-title {
+    font-size: 31px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .section h2 {
+    font-size: 31px;
+  }
+
+  .footer-top {
+  grid-template-columns: 1fr;
+}
+
+.footer-bottom {
+  grid-template-columns: 220px 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+  .help-widget {
+    min-width: 190px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+.acreditaciones {
+  background: #1d1f1f;
+  padding: 45px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: -7%;
+  margin-right: -7%;
+  margin-top: 40px;
+}
+
+.acreditaciones img {
+  width: 50%;
+  max-width: 1000px;
+  height: auto;
+  object-fit: contain;
+}

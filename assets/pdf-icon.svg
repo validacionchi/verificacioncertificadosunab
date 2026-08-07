@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <path d="M25 8h46l24 24v80H25z" fill="#f8f8f8" stroke="#b8b8b8" stroke-width="3"/>
+  <path d="M71 8v25h24" fill="#ececec" stroke="#b8b8b8" stroke-width="3"/>
+  <rect x="18" y="42" width="82" height="26" rx="5" fill="#cf202f"/>
+  <text x="59" y="61" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#fff">PDF</text>
+  <path d="M50 88c9-18 13-25 17-25 3 0 2 8-2 18 8-3 16-3 20 1-8 0-16 2-23 6-6 12-13 18-17 16-4-2 1-9 5-16z" fill="none" stroke="#cf202f" stroke-width="4" stroke-linecap="round"/>
+</svg>

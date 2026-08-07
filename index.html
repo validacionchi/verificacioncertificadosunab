@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="pageTitle">Verificación de certificado</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-box">
+      <img src="assets/logo-arriba.png" alt="Logo superior" class="logo" />
+    </div>
+    <div class="topbar-title" id="headerTitle">Certificados en línea</div>
+  </header>
+
+  <nav class="subnav">
+    <a href="#" onclick="return false;">Preguntas frecuentes</a>
+  </nav>
+
+  <main class="page-wrap">
+    <section class="card">
+      <p class="intro">A continuación se muestra la información del certificado consultado.</p>
+
+      <h1>Verificación Certificado</h1>
+      <h2 class="main-cert-title" id="certificateTitle">CERTIFICADO DE TÍTULO Y GRADO</h2>
+
+      <section class="section">
+        <h2>Estado del certificado</h2>
+        <div class="data-block">
+          <div class="field">
+            <strong>Fecha Emisión:</strong>
+            <span id="issueDate">28-03-2026</span>
+          </div>
+          <div class="field">
+            <strong>Válido Hasta:</strong>
+            <span id="validUntil">No Caduca</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Datos del certificado</h2>
+        <p class="intro">A continuación se muestra información del certificado.</p>
+
+        <div class="data-block">
+          <div class="field">
+            <strong>Identificador:</strong>
+            <span id="identifier">12.345.678-9</span>
+          </div>
+
+          <div class="field">
+            <strong>Apellidos:</strong>
+            <span id="lastName">APELLIDO EJEMPLO</span>
+          </div>
+
+          <div class="field">
+            <strong>Nombre:</strong>
+            <span id="firstName">NOMBRE EJEMPLO</span>
+          </div>
+
+          <div class="field">
+            <strong>Programa / Carrera:</strong>
+            <span id="program">PROGRAMA ACADÉMICO DE EJEMPLO</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section download-section">
+        <h2>Descarga Certificado</h2>
+        <p class="intro">Descarga de certificado en formato PDF.</p>
+
+        <a class="pdf-download" id="pdfLink" href="documento.pdf" download>
+          <img src="assets/pdf-icon.svg" alt="PDF" />
+          <span>Descargar</span>
+        </a>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <h3>Centro de atención</h3>
+        <p id="phone1">600 000 0000</p>
+        <p>Lunes a viernes de 09:00 a 19:00 hrs.</p>
+      </div>
+      <div>
+        <h3>Servicio al estudiante</h3>
+        <p id="phone2">600 111 1111</p>
+        <p>Lunes a viernes de 09:00 a 20:00 hrs.</p>
+      </div>
+      <div class="socials">
+        <span>𝕏</span><span>◉</span><span>f</span><span>◎</span><span>▶</span><span>in</span>
+      </div>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <div class="footer-brand">
+  <img src="assets/logo-abajo.png" alt="Logo inferior" />
+</div>
+      <div>
+        <p>Biblioteca</p>
+        <p>Matrícula y financiamiento</p>
+        <p>Recursos académicos</p>
+        <p>Comunidad de egresados</p>
+      </div>
+      <div>
+        <p>Trabaja con nosotros</p>
+        <p>Desarrollo estudiantil</p>
+        <p>Política de privacidad</p>
+        <p>Contacto</p>
+      </div>
+      <div>
+        <p>Gestiona tu caso</p>
+        <p>Información institucional</p>
+          <p>Calendarios</p>
+</div>
+</div>
+
+<div class="acreditaciones">
+  <img src="assets/acreditacion1.png" alt="Acreditación 1">
+
+</div>
+
+</footer>
+
+<div class="help-widget">
+    <div class="avatar">?</div>
+    <div>
+      <strong>¿Te ayudo?</strong>
+      <small>Estamos en línea</small>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
