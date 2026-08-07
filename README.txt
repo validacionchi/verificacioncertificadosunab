@@ -27,3 +27,4 @@ Después:
 Settings > Pages > Deploy from a branch > main > /(root) > Save.
 
 Nota: la plantilla es una recreación genérica de una interfaz de consulta de certificados; usa tu propia marca y datos.
+Página configurada en GitHub Pages.
