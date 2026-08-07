@@ -9,7 +9,7 @@
 <body>
   <header class="topbar">
     <div class="brand-box">
-      <img src="assets/logo-placeholder.svg" alt="Logo de demostración" class="logo" />
+      <img src="assets/logo-arriba.png" alt="Logo superior" class="logo" />
     </div>
     <div class="topbar-title" id="headerTitle">Certificados en línea</div>
   </header>
@@ -17,10 +17,6 @@
   <nav class="subnav">
     <a href="#" onclick="return false;">Preguntas frecuentes</a>
   </nav>
-
-  <div class="demo-notice">
-    SITIO DE DEMOSTRACIÓN · NO OFICIAL
-  </div>
 
   <main class="page-wrap">
     <section class="card">
@@ -34,7 +30,7 @@
         <div class="data-block">
           <div class="field">
             <strong>Fecha Emisión:</strong>
-            <span id="issueDate">28-03-2026</span>
+            <span id="issueDate">11/08/2026</span>
           </div>
 
           <div class="field">
@@ -51,7 +47,7 @@
         <div class="data-block">
           <div class="field">
             <strong>Identificador:</strong>
-            <span id="identifier">12.345.678-9</span>
+            <span id="identifier">UNAB41206</span>
           </div>
 
           <div class="field">
@@ -65,7 +61,7 @@
           </div>
 
           <div class="field">
-            <strong>Programa / Carrera:</strong>
+            <strong>Carrera:</strong>
             <span id="program">UNAB12100 - INGENIERÍA CIVIL INDUSTRIAL</span>
           </div>
         </div>
@@ -107,7 +103,7 @@
     <!-- IMPORTANTE: este contenedor faltaba y por eso el pie no quedaba en columnas en PC -->
     <div class="footer-bottom">
       <div class="footer-brand">
-        <img src="assets/logo-placeholder.svg" alt="Logo de demostración" />
+        <img src="assets/logo-abajo.png" alt="Logo inferior" />
       </div>
 
       <div>
@@ -130,10 +126,9 @@
         <p>Calendarios</p>
       </div>
     </div>
+
     <div class="acreditaciones">
-      <div class="demo-acred">
-        ESPACIO INSTITUCIONAL DE DEMOSTRACIÓN
-      </div>
+      <img src="assets/acreditacion1.png" alt="Acreditación 1" />
     </div>
   </footer>
 
@@ -147,11 +142,15 @@
 
   <script src="app.js"></script>
   <script>
-    // Valores fijos solicitados para esta versión de demostración.
+    /* Solo fija estos dos valores sin modificar tus demás datos de app.js */
     document.getElementById("certificateTitle").textContent =
       "SÓLO PARA TITULADOS - Certificados de Título - Certificado de Título y Grado";
     document.getElementById("program").textContent =
       "UNAB12100 - INGENIERÍA CIVIL INDUSTRIAL";
+    document.getElementById("issueDate").textContent =
+      "11/08/2026";
+    document.getElementById("identifier").textContent =
+      "UNAB41206";
   </script>
 </body>
 </html>
