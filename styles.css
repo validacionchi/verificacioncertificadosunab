@@ -650,3 +650,11 @@ h1 {
     overflow: hidden !important;
   }
 }
+
+/* ÚNICO AJUSTE: logo superior un poco más grande en celular */
+@media (max-width: 768px) {
+  .brand-box .logo {
+    transform: scale(1.12) !important;
+    transform-origin: left center !important;
+  }
+}
