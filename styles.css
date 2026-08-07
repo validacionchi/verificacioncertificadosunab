@@ -658,3 +658,23 @@ h1 {
     transform-origin: left center !important;
   }
 }
+
+/* =========================================================
+   AJUSTE ÚNICO 07-08-2026: LOGO SUPERIOR MÁS GRANDE EN MÓVIL
+   ========================================================= */
+@media (max-width: 768px) {
+  .brand-box .logo {
+    transform: scale(1.15) !important;
+    transform-origin: center center !important;
+  }
+}
+
+/* =========================================================
+   ÚNICO CAMBIO: tamaño del logo superior en CELULAR
+   ========================================================= */
+@media (max-width: 768px) {
+  .brand-box .logo {
+    transform: translateX(-4%) scale(1.45) !important;
+    transform-origin: center center !important;
+  }
+}
