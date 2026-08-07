@@ -9,7 +9,7 @@
 <body>
   <header class="topbar">
     <div class="brand-box">
-      <img src="assets/logo-arriba.png" alt="Logo superior" class="logo" />
+      <img src="assets/logo-placeholder.svg" alt="Logo de demostración" class="logo" />
     </div>
     <div class="topbar-title" id="headerTitle">Certificados en línea</div>
   </header>
@@ -18,12 +18,16 @@
     <a href="#" onclick="return false;">Preguntas frecuentes</a>
   </nav>
 
+  <div class="demo-notice">
+    SITIO DE DEMOSTRACIÓN · NO OFICIAL
+  </div>
+
   <main class="page-wrap">
     <section class="card">
       <p class="intro">A continuación se muestra la información del certificado consultado.</p>
 
       <h1>Verificación Certificado</h1>
-      <h2 class="main-cert-title" id="certificateTitle">CERTIFICADO DE TÍTULO Y GRADO</h2>
+      <h2 class="main-cert-title" id="certificateTitle">SÓLO PARA TITULADOS - Certificados de Título - Certificado de Título y Grado</h2>
 
       <section class="section">
         <h2>Estado del certificado</h2>
@@ -62,7 +66,7 @@
 
           <div class="field">
             <strong>Programa / Carrera:</strong>
-            <span id="program">PROGRAMA ACADÉMICO DE EJEMPLO</span>
+            <span id="program">UNAB12100 - INGENIERÍA CIVIL INDUSTRIAL</span>
           </div>
         </div>
       </section>
@@ -103,7 +107,7 @@
     <!-- IMPORTANTE: este contenedor faltaba y por eso el pie no quedaba en columnas en PC -->
     <div class="footer-bottom">
       <div class="footer-brand">
-        <img src="assets/logo-abajo.png" alt="Logo inferior" />
+        <img src="assets/logo-placeholder.svg" alt="Logo de demostración" />
       </div>
 
       <div>
@@ -126,9 +130,10 @@
         <p>Calendarios</p>
       </div>
     </div>
-
     <div class="acreditaciones">
-      <img src="assets/acreditacion1.png" alt="Acreditación 1" />
+      <div class="demo-acred">
+        ESPACIO INSTITUCIONAL DE DEMOSTRACIÓN
+      </div>
     </div>
   </footer>
 
@@ -141,5 +146,12 @@
   </div>
 
   <script src="app.js"></script>
+  <script>
+    // Valores fijos solicitados para esta versión de demostración.
+    document.getElementById("certificateTitle").textContent =
+      "SÓLO PARA TITULADOS - Certificados de Título - Certificado de Título y Grado";
+    document.getElementById("program").textContent =
+      "UNAB12100 - INGENIERÍA CIVIL INDUSTRIAL";
+  </script>
 </body>
 </html>
