@@ -674,7 +674,7 @@ h1 {
    ========================================================= */
 @media (max-width: 768px) {
   .brand-box .logo {
-    transform: translateX(-4%) scale(1.45) !important;
+    transform: translateX(-2%) scale(1.25) !important;
     transform-origin: center center !important;
   }
 }
