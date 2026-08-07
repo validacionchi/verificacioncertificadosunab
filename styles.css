@@ -528,6 +528,9 @@ h1 {
   .help-widget strong {
     font-size: 21px;
   }
+
+} /* cierre de @media (max-width: 768px) */
+
 /* =========================================
    DISEÑO SOLO PARA COMPUTADOR
    ========================================= */
